@@ -39,7 +39,7 @@
 [x] [PROJECT UI CLONE DISCORD](ui_clone_discord)
 ###### You can find the youtube video for this project [here](https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PLYnJaupNs4gzQ2QhA6gvEk63KGBBVuerJ)!
 
-[x] [SPECIAL DEV WORKSHOP](workshop_dev_special)
+[x] [SPECIAL DEV WORKSHOP](workshopDev)
 ###### You can find the youtube video for this project [here](https://www.youtube.com/playlist?list=PL85ITvJ7FLohGTWaE_p0J6B-TLmQbN4ka)!
 
 </p>

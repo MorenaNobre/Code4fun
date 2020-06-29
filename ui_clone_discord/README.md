@@ -12,7 +12,7 @@
 
 <br>
 
-<p align="center">Deployed <a href="https://uidiscord.netlify.app/">here</a></p>
+<p align="center">Deployed <a href="https://uidiscord.netlify.app/" target="_blank">here</a></p>
 
 <hr>
 

@@ -1,6 +1,3 @@
-<h1 align="center">
-    <img src="../assets/code4funFinal.png" width="250px">
-</h1>
 <h3 align="center">
   Special WorkshopDev - Criative House
 </h3>
@@ -8,8 +5,15 @@
 <blockquote align="center">“The key to transformation is continuity. Keep coding!.”</blockquote>
 
 <p align="center">
+  <a href="#rocket-sobre-o-desafio">Presentation</a>&nbsp;&nbsp;|&nbsp;
   <a href="#rocket-sobre-o-desafio">About the workshop</a>&nbsp;&nbsp;&nbsp;
 </p>
+
+## Presentation
+
+<div align="center" width="100%">
+  <img alt="presentation" src="public/casaCriativa.gif">
+</div>
 
 ## About the Workshop
 
@@ -32,5 +36,5 @@ The teachings range from site structure (frontend) to database (backend) :
 <hr>
 
 <h3 align="center">
-    <img alt="github" src="../assets/mayCode.png" width="150px" />
+    <img alt="github" src="public/mayCode.png" width="100px" />
 </h3>

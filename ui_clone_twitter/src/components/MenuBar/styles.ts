@@ -16,7 +16,14 @@ export const Container = styled.div`
     }
 `;
 
-export const Topside = styled.div``;
+export const Topside = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1280px) {
+        align-items: flex-start;
+    }
+`;
 
 export const Logo = styled.div``;
 

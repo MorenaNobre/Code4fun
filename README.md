@@ -36,6 +36,9 @@
 
 <p>
 
+- [x] [PROJECT UI CLONE TWITTER](twitter-clone)
+###### You can find the youtube video for this project [here](https://www.youtube.com/watch?v=K-8z_4xvT3o&t=6589s)!
+
 - [x] [PROJECT UI CLONE DISCORD](ui_clone_discord)
 ###### You can find the youtube video for this project [here](https://www.youtube.com/watch?v=x4FdZd2-_uU&list=PLYnJaupNs4gzQ2QhA6gvEk63KGBBVuerJ)!
 

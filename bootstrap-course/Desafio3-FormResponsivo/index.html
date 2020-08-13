@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Responsivo</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <form action="">
+    
+      <div class="form-row">
+        <div class="col form-group">
+          <label for="first">Primeiro Nome</label>
+          <input type="text" class="form-control" id="first">
+        </div>
+        <div class="col form-group">
+          <label for="second">Sobrenome</label>
+          <input type="text" class="form-control" id="second">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="form-row">
+        <div class="col-sm-3 form-group">
+          <label for="zipcode">CEP</label>
+          <input type="text" class="form-control" id="zipcode">
+        </div>
+      </div>  
+
+      <div class="form-row">
+        <div class="col-sm-9 form-group">
+          <label for="address">Endereço</label>
+          <input type="text" class="form-control" id="address" placeholder="Rua, Av...">
+        </div>
+        <div class="col-sm-3 form-group">
+          <label for="number">Número</label>
+          <input type="number" class="form-control" id="number">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-sm-6 form-group">
+          <label for="complement">Complemento</label>
+          <input type="text" class="form-control" id="complement">
+        </div>
+        <div class="col-sm-6 form-group">
+          <label for="district">Bairro</label>
+          <input type="text" class="form-control" id="district">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-sm-4 form-group">
+          <label for="city">Cidade</label>
+          <input type="text" class="form-control" id="city">
+        </div>
+        <div class="col-6 col-sm-4 form-group">
+          <label for="estate">Estado</label>
+          <input type="text" class="form-control" id="state">
+        </div>
+        <div class="col-6 col-sm-4 form-group">
+          <label for="country">País</label>
+          <input type="text" class="form-control" id="country">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <!-- button.btn.btn-primary.btn-block{Enviar} -->
+        <button type="submit" class="btn btn-success btn-block">Salvar</button>
+      </div>
+
+    </form>
+
+  </div>
+  
+</body>
+</html>

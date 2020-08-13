@@ -36,6 +36,8 @@
 
 <p>
 
+- [x] [BOOTSTRAP COURSE](bootstrap-course)
+
 - [x] [PROJECT UI CLONE TWITTER](twitter-clone)
 ###### You can find the youtube video for this project [here](https://www.youtube.com/watch?v=K-8z_4xvT3o&t=6589s)!
 

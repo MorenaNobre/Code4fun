@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Checkbox</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/example.css">-->
+  </head>
+  <body>
+
+    <div class="container">     
+
+      <!-- com estilização bootstrap -->   
+
+      <hr>
+
+      <form action="">
+
+        <!--form radio tem que estar dentro de um form-check-->
+        <div class="form-check">
+          <input type="checkbox" name="aceito" id="aceito" class="form-check-input" value="aceito">
+          <label for="aceito" class="form-check-label">Aceito os termos de uso</label>
+        </div>  
+
+        <div class="form-check">
+          <input type="checkbox" name="receber" id="receber" class="form-check-input" value="receber">
+          <label for="receber" class="form-check-label">Desejo receber informações</label>
+        </div>  
+
+        <button type="submit" class="btn btn-success">Enviar</button>
+
+      </form>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(() => {})
+    </script>
+  </body>
+</html>

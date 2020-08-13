@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/example.css">-->
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row m-2">
+        <div class="col">
+          <button class="btn btn-primary m-2">Say What?!</button>
+          <button class="btn btn-secondary m-2">Say Not?!</button>
+          <button class="btn btn-success m-2">Say Yas?!</button>
+          <button class="btn btn-danger m-2">Say Danger?!</button>
+          <button class="btn btn-warning m-2">Say Read?!</button>
+          <button class="btn btn-info m-2">Say T?!</button>
+          <button class="btn btn-dark m-2">Say Shade?!</button>
+          <button class="btn btn-light m-2">Say Sis?!</button>
+          <button class="btn btn-link m-2">Say F*ck?!</button>
+        </div>
+      </div>
+
+      <!-- também pode ser usada com a tag a (de link) e com a tag input -->
+
+      <!-- .row>.col>input.btn.btn-primary+a.btn.btn-primary+button.btn.btn-primary  -->
+      <div class="row m-2">
+        <div class="col m-2">
+          <input type="button" class="btn btn-primary" value=OK>
+          <a href="" class="btn btn-primary">OK</a>
+          <button class="btn btn-primary">OK</button>
+        </div>
+      </div>
+
+      <!-- .row>.col>button.btn.btn-outline-primary{OK}  -->
+      <div class="row m-2">
+        <div class="col">
+          <button class="btn btn-outline-primary m-2">Say What?!</button>
+          <button class="btn btn-outline-secondary m-2">Say What?!</button>
+          <button class="btn btn-outline-danger m-2">Say What?!</button>
+          <button class="btn btn-outline-warning m-2">Say What?!</button>
+          <button class="btn btn-outline-success m-2">Say What?!</button>
+        </div>
+      </div>
+
+      <!-- .row>.col>button.btn.btn-success.btn-lg{Shantay you stay!}  -->
+      <div class="row m-2">
+        <div class="col button btn btn-success btn-lg m-2">Shantay you Stay!</div>
+        <button class="btn btn-danger btn-sm">Bye!</button>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary btn-block">Say What?!</button>
+        </div>
+      </div>
+
+      <!-- .row>.col>a.btn.btn-primary.active.btn-block  -->
+      <div class="row">
+        <div class="col">
+          <a href="#" class="btn btn-primary active btn-block" aria-pressed="true">Say Link?!</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-danger btn-block" disabled>Say What?!</button>
+        </div>
+      </div>
+
+      <!-- .row>.col>button.btn.btn-success#btn-auto-save{Say Off?!}  -->
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-success" id="btn-auto-save" data-toggle="button">Say Off ?!</button>
+        </div>
+      </div>
+
+      <!-- .row>.col>.btn-group.btn-group-toggle  -->
+      <div class="row">
+        <div class="col">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <!-- label.btn.btn-secondary*3>input:radio#option$  -->
+            <label for="option1" class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" checked> Say Check?!
+            </label>
+
+            <label for="option2" class="btn btn-secondary">
+              <input type="radio" name="options" id="option2"> Say What?!
+            </label>
+
+            <label for="option3" class="btn btn-secondary">
+              <input type="radio" name="options" id="option3"> Say Not?!
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- button.btn.btn-primary{Say On?!/ Say Off ?! Auto Save}  -->
+      <button class="btn btn-primary" id="btn-click">Say On?!/ Say Off ?! Auto Save</button>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(() => {
+
+        $('#btn-click').on('click', e => {
+          $('#btn-auto-save').button('toggle')
+        })
+
+      })
+    </script>
+  </body>
+</html>

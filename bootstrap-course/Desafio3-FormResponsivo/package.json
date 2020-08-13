@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  },
+  "name": "Desafio3-FormResponsivo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

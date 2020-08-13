@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/example.css">-->
+  </head>
+  <body>
+
+    <h1>Say What!<span class="badge badge-primary">Novo</span></h1>
+    <h2>Say What!<span class="badge badge-primary">Novo</span></h2>
+    <h3>Say What!<span class="badge badge-primary">Novo</span></h3>
+    <h4>Say What!<span class="badge badge-primary">Novo</span></h4>
+    <h5>Say What!<span class="badge badge-primary">Novo</span></h5>
+    <h6>Say What!<span class="badge badge-primary">Novo</span></h6>
+
+    <hr>
+
+    <button id="btn-click" type="button" class="btn btn-primary">Click<span class="badge badge-light ml-2">0</span></button>
+
+    <hr>
+
+    <button type="button" class="btn btn-primary">
+      Caixa de Entrada<span class="badge badge-light ml-2">5</span>
+      <span class="sr-only">Há 5 mensagens não lidas</span>
+    </button>
+
+    <hr>
+
+    <!-- span.badge.badge-primary{$}*8  -->
+    <span class="badge badge-primary">1</span>
+    <span class="badge badge-secondary">2</span>
+    <span class="badge badge-success">3</span>
+    <span class="badge badge-danger">4</span>
+    <span class="badge badge-warning">5</span>
+    <span class="badge badge-info">6</span>
+    <span class="badge badge-dark">7</span>
+    <span class="badge badge-light">8</span>
+
+    <hr>
+
+    <span class="badge badge-primary">OK</span>
+    <span class="badge badge-primary badge-pill">OK</span>
+
+    <hr>
+
+    <a href="#" class="badge badge-success">verde</a>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(() => {
+
+        $('#btn-click').on('click', e => {
+
+          const valor = parseInt($(e.target).find('.badge').text())
+
+          $(e.target).find('.badge').text(valor + 1)
+        })
+
+      })
+    </script>
+  </body>
+</html>

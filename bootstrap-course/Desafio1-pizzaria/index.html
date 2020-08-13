@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <!-- d-flex & justify-content para deixar img de um lado nav do outro lado com espaço entre eles.-->
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="assets/img/logo-pizzaria.png" alt="Logo">
+
+      <nav class="text-white">
+        <ul class="list-inline">
+          <li class="list-inline-item">Home</li>
+          <li class="list-inline-item">Cardápio</li>
+          <li class="list-inline-item">Contato</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <nav>
+          <ul class="list-unstyled">
+            <li class="p-1">Home</li>
+            <li class="p-1">Cardápio</li>
+            <li class="p-1">Pizzas Tradicionais</li>
+            <li class="p-1">Pizzas Nobres</li>
+            <li class="p-1">Pizzas Doces</li>
+            <li class="p-1">Promoções</li>
+            <li class="p-1">Pedido Online</li>
+            <li class="p-1">Contato</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-9">
+        <h1>Home</h1>
+        <p>Lorem, <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Amet, ea. Tempora, <del class="text-danger">cupiditate</del> ea dolore nihil eveniet incidunt deserunt. Eos voluptatibus earum hic molestiae quos id ratione doloribus, excepturi illo esse!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <nav>
+          <ul class="list-unstyled">
+            <li class="h4">Links</li>
+            <li>Home</li>
+            <li>Cardápio</li>
+            <li>Contato</li>
+          </ul>
+        </nav>
+        </div>
+        <div class="col-6">
+          <nav>
+          <ul class="list-unstyled">
+            <!--<li><h4>Pizzas</h4></li>-->
+            <li class="h4">Pizzas</li>
+            <li>Tradicionais</li>
+            <li>Nobres</li>
+            <li>Doces</li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+      
+      <!--baixo é com d-flex e acima é com row e col-->
+      <!--<div class="d-flex justify-content-around">
+        <nav>
+          <ul class="list-unstyled">
+            <li>Links</li>
+            <li>Home</li>
+            <li>Cardápio</li>
+            <li>Contato</li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="list-unstyled">
+            <li>Pizzas</li>
+            <li>Tradicionais</li>
+            <li>Nobres</li>
+            <li>Doces</li>
+          </ul>
+        </nav>
+      </div>-->
+
+      <p class="text-center">Pizzaria.com.br</p>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

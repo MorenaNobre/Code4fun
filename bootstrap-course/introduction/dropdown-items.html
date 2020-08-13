@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Items</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/example.css">-->
+  </head>
+  <body>
+
+    <div class="container">
+    
+      <div class="dropdown">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Menu</button>
+        <div class="dropdown-menu">
+          <span class="dropdown-item-text">lorem</span>
+          <a href="#" class="dropdown-item">1</a>
+          <a href="#" class="dropdown-item">2</a>
+          <a href="#" class="dropdown-item">3</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="dropdown">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Menu</button>
+        <div class="dropdown-menu">
+          <span class="dropdown-item-text">lorem</span>
+          <a href="#" class="dropdown-item">1</a>
+          <a href="#" class="dropdown-item">2</a>
+          <a href="#" class="dropdown-item">3</a>
+          <a href="#" class="dropdown-item disabled">4</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="dropdown">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Menu</button>
+        <div class="dropdown-menu">
+          <span class="dropdown-item-text">lorem</span>
+          <button class="dropdown-item">1</button>
+          <button class="dropdown-item">2</button>
+          <button class="dropdown-item" disabled>3</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="dropdown">
+        <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Menu</button>
+        <div class="dropdown-menu">
+          <!-- Pode ter texto -->
+          <!-- h6.dropdown-header{Header} -->
+          <h6 class="dropdown-header">Header</h6>
+          <button class="dropdown-item">1</button>
+          <button class="dropdown-item">2</button>
+          <button class="dropdown-item" disabled>3</button>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Header</h6>
+          <button class="dropdown-item">1</button>
+          <button class="dropdown-item">2</button>
+          <button class="dropdown-item" disabled>3</button>
+        </div>
+      </div>
+    
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(() => {})
+    </script>
+  </body>
+</html>

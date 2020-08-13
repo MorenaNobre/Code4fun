@@ -1,0 +1,61 @@
+header, footer {
+  background-color: #eee;
+  padding: 5px;
+  min-height: 60px;
+}
+
+header img, .list-group img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header img {
+  margin-left: 16px;
+}
+
+header {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+main {
+  background-color: #e5ddd5;
+  min-height: calc(100vh - 121px);
+}
+
+h6 {
+  margin: 0;
+}
+
+.timeago {
+  color: #999;
+  font-size: .8em;
+}
+
+.badge-success {
+  background-color: #09d261;
+}
+
+#search {
+  background-color: #f8f8f8;
+  min-height: 50px;
+}
+
+#panel-left {
+  border-right: 1px solid #dbdbdb;
+  color: #4d4d4d;
+}
+
+#panel-left small {
+  color: #9b9b9b;
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  border-color: #f8f8f8;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

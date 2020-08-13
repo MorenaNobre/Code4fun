@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Radio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/example.css">-->
+  </head>
+  <body>
+
+    <div class="container">     
+
+      <!-- com estilização bootstrap -->   
+
+      <hr>
+
+      <form action="">
+
+        <!--form radio tem que estar dentro de um form-check-->
+        <div class="form-check">
+          <input type="radio" name="gender" id="gender-m" class="form-check-input" value="M">
+          <label for="gender-m" class="form-check-label">Masculino</label>
+        </div>  
+
+        <div class="form-check">
+          <input type="radio" name="gender" id="gender-f" class="form-check-input" value="F">
+          <label for="gender-f" class="form-check-label">Feminino</label>
+        </div>  
+
+        <button type="submit" class="btn btn-success">Enviar</button>
+
+      </form>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(() => {})
+    </script>
+  </body>
+</html>

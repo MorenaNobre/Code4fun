@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/example.css">-->
+  </head>
+  <body>
+
+    <div class="container">
+      
+      <div class="alert alert-success" role="alert">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quos quibusdam tempore laborum earum? Enim eius, ut iusto voluptatem vitae veritatis officia ratione inventore, tempora, vel laboriosam laborum commodi odio.</div>
+
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-secondary">Say What?!</div>
+        </div>
+
+        <div class="col">
+          <div class="alert alert-primary">Say What?!</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="alert alert-danger">Say What?!</div>
+        </div>
+
+        <div class="col-sm">
+          <div class="alert alert-warning">Say What?!</div>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        Say Info What?!!
+        <a href="http://google.com">Google</a>
+      </div>
+
+      <div class="alert alert-dark">
+        <h4>Say theF* What?!!</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eveniet placeat asperiores fugit exercitationem accusantium veritatis animi maiores, dicta doloremque dolore distinctio impedit, officiis velit nobis at provident in nihil?</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi unde enim earum ex omnis perferendis vel expedita possimus nemo officia soluta natus odit vero, voluptas dolore quos repellendus quibusdam fuga.</p>
+      </div>
+
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae quibusdam accusantium dolorum porro reprehenderit repudiandae eveniet?
+        <button class="close" data-dismiss="alert" area-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <button id="btn-close-all" type="button">Say close all Alerts, What?!!</button>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(() => {
+
+        $('#btn-close-all').on('click', e => {
+          $('.alert').alert('close')
+        })
+
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" data-content="Conteúdo do Popover">Mostrar Popover</button>
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" title="Título Popover" data-content="Conteúdo do Popover">Mostrar Popover</button>
+
+      <hr>
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" title="Título Popover" data-content="Conteúdo do Popover" data-placement="left">Mostrar Popover</button>
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" title="Título Popover" data-content="Conteúdo do Popover" data-placement="bottom">Mostrar Popover</button>
+
+      <hr>
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" title="Título Popover" data-content="Conteúdo do Popover" data-trigger="focus" data-placement="bottom">Mostrar Popover</button>
+
+      <hr>
+
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="popover" title="Título Popover" data-content="Conteúdo do Popover" data-trigger="hover" data-placement="bottom">Mostrar Popover</button>
+
+      <hr>
+
+      <button class="btn btn-danger btn-lg" id="btn-click">Abrir Popovers</button>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+      //se quiser acionar todos plugins popover: abaixo
+      $(() => {
+        $('[data-toggle="popover"]').popover()
+
+        //util para ajuda na página - mostra todos os popover
+        $('#btn-click').on('click', e => {
+          $('[data-toggle="popover"]').popover('toggle')
+        })
+      })
+
+    </script>
+
+  </body>
+</html>

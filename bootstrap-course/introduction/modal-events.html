@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Events</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <button type="button" data-toggle="modal" data-target="#modal-1" class="btn btn-primary btn-lg">Abrir</button>
+
+    <div class="modal"  id="modal-1">
+
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <div class="modal-title">Teste do Modal</div>
+            <button class="close" type="button" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <img src="https://picsum.photos/350/250/" alt="Imagem" class="m-5">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="btn-continue">Continuar</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+      $(() => {
+        $('#modal-1').on('show.bs.modal', e => {
+          console.log('show.bs.modal', e.target)
+        }).on('shown.bs.modal', e => {
+          console.log('shown.bs.modal', e.target)
+        }).on('hide.bs.modal', e => {
+          console.log('hide.bs.modal', e.target)
+        }).on('hidden.bs.modal', e => {
+          console.log('hidden.bs.modal', e.target)
+        })
+      })
+
+    </script>
+
+  </body>
+</html>

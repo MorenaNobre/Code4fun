@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+    <title>Modal Centered</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
@@ -12,7 +12,7 @@
 
     <div class="modal"  id="modal-1">
 
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
 
         <div class="modal-content">
 
@@ -25,7 +25,7 @@
 
           <div class="modal-body">
             <img src="https://picsum.photos/350/250/" alt="Imagem" class="m-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit eveniet nulla sint recusandae assumenda veritatis possimus, quos sunt totam at dolorem error architecto beatae voluptates ab ex. Voluptate, cum!</p>            
           </div>
 
           <div class="modal-footer">
@@ -44,8 +44,14 @@
     <script>
 
       $(() => {
-        $('#btn-continue').on('click', e => {
-          $('#modal-1').modal('hide')
+        $('#modal-1').on('show.bs.modal', e => {
+          console.log('show.bs.modal', e.target)
+        }).on('shown.bs.modal', e => {
+          console.log('shown.bs.modal', e.target)
+        }).on('hide.bs.modal', e => {
+          console.log('hide.bs.modal', e.target)
+        }).on('hidden.bs.modal', e => {
+          console.log('hidden.bs.modal', e.target)
         })
       })
 

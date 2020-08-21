@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <button type="button" class="navbar-toggler">
+        <img src="assets/img/hamburger.gif" alt="Menu">
+      </button>
+
+      <a href="#" class="navbar-brand flex-grow-1">
+        <img src="assets/img/logo.png" alt="Netflix" height="30" class="my-1 mx-2">
+      </a>
+
+      <form action="" class="form-inline">
+        <input type="search" name="" id="" class="form-control" placeholder="Busca">
+      </form>
+
+      <ul class="list-unstyled font-weight-bold">
+        <li class="media media-avatar">
+          <img src="assets/img/avatar.jpg" alt="Avatar" class="mr-2">
+          <div class="media-body">
+            <p class="h6 m-0">Morena Nobre</p>
+            <small>Trocar de perfil</small>
+          </div>
+        </li>
+
+        <li class="divider"></li>
+
+        <li><a href="#" class="text-reset">Início</a></li>
+        <li><a href="#" class="text-reset">Minha Lista</a></li>
+        <li><a href="#" class="text-reset">Séries de Ação e Aventura</a></li>
+        <li><a href="#" class="text-reset">Ação e Aventura</a></li>
+        <li><a href="#" class="text-reset">Séries Teen</a></li>
+        <li><a href="#" class="text-reset">Filmes Africanos</a></li>
+        <li><a href="#" class="text-reset">Séries da América Latina</a></li>
+        <li><a href="#" class="text-reset">Filmes Anime</a></li>
+      </ul>
+
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script>
+
+      const btn = document.querySelector('.navbar-toggler')
+      const navbar = document.querySelector('.navbar')
+
+      btn.addEventListener('click', e => {
+
+        navbar.classList.toggle('sidebar-open')
+
+      })
+
+    </script>
+
+  </body>
+</html>

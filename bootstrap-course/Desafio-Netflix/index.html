@@ -10,19 +10,33 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark fixed-top">
-      <button type="button" class="navbar-toggler">
+      <button type="button" class="navbar-toggler d-lg-none">
         <img src="assets/img/hamburger.gif" alt="Menu">
       </button>
 
       <a href="#" class="navbar-brand flex-grow-1">
-        <img src="assets/img/logo.png" alt="Netflix" height="30" class="my-1 mx-2">
+        <img src="assets/img/logo.png" alt="Netflix" class="my-1 mx-2">
       </a>
+
+      <ul class="nav text-white d-none d-lg-flex">
+        <li class="nav-item"><a href="#" class="nav-link text-reset active">Navegar</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-reset">Infantil</a></li>
+      </ul>
 
       <form action="" class="form-inline">
         <input type="search" name="" id="" class="form-control" placeholder="Busca">
       </form>
 
-      <ul class="list-unstyled font-weight-bold">
+      <div>
+        <li class="media text-white p-2 d-none d-lg-flex">
+          <img src="assets/img/avatar.jpg" alt="Avatar" class="mr-2">
+          <div class="media-body">
+            <p class="h6 m-0">Morena Nobre</p>
+          </div>
+        </li>
+      </div>
+
+      <ul class="list-unstyled font-weight-bold sidebar">
         <li class="media media-avatar">
           <img src="assets/img/avatar.jpg" alt="Avatar" class="mr-2">
           <div class="media-body">
@@ -33,33 +47,109 @@
 
         <li class="divider"></li>
 
-        <li><a href="#" class="text-reset">Início</a></li>
-        <li><a href="#" class="text-reset">Minha Lista</a></li>
-        <li><a href="#" class="text-reset">Séries de Ação e Aventura</a></li>
-        <li><a href="#" class="text-reset">Ação e Aventura</a></li>
-        <li><a href="#" class="text-reset">Séries Teen</a></li>
-        <li><a href="#" class="text-reset">Filmes Africanos</a></li>
-        <li><a href="#" class="text-reset">Séries da América Latina</a></li>
-        <li><a href="#" class="text-reset">Filmes Anime</a></li>
+        <li>
+          <a href="#" class="text-reset">Início</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Minha Lista</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Séries de Ação e Aventura</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Ação e Aventura</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Séries Teen</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Filmes Africanos</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Séries da América Latina</a>
+        </li>
+        <li>
+          <a href="#" class="text-reset">Filmes Anime</a>
+        </li>
       </ul>
 
     </nav>
 
     <div class="container-fluid">
+
       <div class="row">
         <div class="col-12 full-banner text-white">
-          <div class="p-4">
-            <h1 class="h3">Vingadores: Ultimato</h1>
-            <small class="d-flex my-2">
-              <span class="mr-3">2019</span>
-              <span class="mr-3">12</span>
-              <span>182 min</span>
-            </small>
-            <a href="#" class="btn btn-primary text-uppercase font-weight-bold">Assistir</a>
+          <div class="p-4 d-flex justify-content-start align-items-center h-100">
+            <div>
+              <h1 class="h3">Vingadores: Ultimato</h1>
+              <small class="d-flex my-2">
+                <span class="mr-3">2019</span>
+                <span class="mr-3">12</span>
+                <span>182 min</span>
+              </small>
+              <p class="d-none d-lg-block">Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
+              <a href="#" class="btn btn-primary text-uppercase font-weight-bold">Assistir</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="p-3 list-titles">
+            <h2 class="h4">Adicionados recentemente</h2>
+            <div class="d-flex flex-nowrap overflow-hidden">
+              <a href="" class="px-1 my-3"><img src="assets/img/capitao-america-o-primeiro-vingador.jpg" alt="Capitan" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/eu-sou-a-lenda.jpg" alt="Lenda" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/greys-anatomy.jpg" alt="" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/homem-de-ferro-2.jpg" alt="" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/thor-o-mundo-sombrio.jpg" alt="Thor Dark" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/vingadores-era-de-ultron.jpg" alt="Ultron" class="w-100"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="p-3 list-titles">
+            <h2 class="h4">Em alta</h2>
+            <div class="d-flex flex-nowrap overflow-hidden">
+              <a href="" class="px-1 my-3"><img src="assets/img/better-call-saul.jpg" alt="Saul" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/guardios-da-galaxia.jpg" alt="Galaxia" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/homem-de-ferro.jpg" alt="Ferro" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/o-menino-que-descobriu-o-vento.jpg" alt="Menino" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/greys-anatomy.jpg" alt="" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/homem-de-ferro-2.jpg" alt="" class="w-100"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="p-3 list-titles">
+            <h2 class="h4">Continuar assistindo como <span class="text-uppercase">Morena Nobre</span></h2>
+            <div class="d-flex flex-nowrap overflow-hidden">
+              <a href="" class="px-1 my-3"><img src="assets/img/nosso-planeta.jpg" alt="Planeta" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/the-rain.jpg" alt="Rain" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/thor-o-mundo-sombrio.jpg" alt="Thor Dark" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/vingadores-era-de-ultron.jpg" alt="Ultron" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/homem-de-ferro.jpg" alt="Ferro" class="w-100"></a>
+              <a href="" class="px-1 my-3"><img src="assets/img/o-menino-que-descobriu-o-vento.jpg" alt="Menino" class="w-100"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <footer class="row no-gutters p-4">
+      <a href="#" class="col-12 col-md-3 text-reset">Termos de uso</a>
+      <a href="#" class="col-12 col-md-3 text-reset">Declaração de privacidade</a>
+      <a href="#" class="col-12 col-md-3 text-reset">Preferência de cookies</a>
+      <a href="#" class="col-12 col-md-3 text-reset">Centro de ajuda</a>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

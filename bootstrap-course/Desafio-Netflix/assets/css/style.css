@@ -28,7 +28,7 @@ body, .bg-dark{
   padding-right: 0;
 }
 
-.navbar ul {
+.navbar ul.sidebar {
   color: #999898;
   max-width: 250px;
   background-color: #1B1B1B;
@@ -72,9 +72,75 @@ body, .bg-dark{
 /*aguardar resposta udemy para corrigir isto*/
 .full-banner {
   background-image: url('../img/full-banner.jpg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  height: 50vh;
-  width: 100vw;
+  min-height: 120px;
+}
+
+.full-banner small {
+  color: #999898;
+}
+
+.full-banner .btn-primary {
+  background-color: #e30f19;
+  border-radius: 0;
+  border: none;
+  min-width: 100px;
+}
+
+.list-titles h2, footer {
+  color: #999898;
+}
+
+.list-titles img {
+  min-width: 260px;
+}
+
+@media (min-width: 576px) {
+  .full-banner {
+    /* min-height: 256px; */
+    min-height: 450px;
+  }
+  .navbar .form-control {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-titles img {
+    min-width: 230px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar.bg-dark {
+    background-color: transparent!important;
+    background-image: url('../assets/img/header_gradient.png');
+    background-repeat: repeat-x;
+  }
+  .full-banner {
+    min-height: 50vh;
+  }
+  .full-banner p {
+    color: #999898;
+    max-width: 32vw;
+  }
+  .navbar-brand.flex-grow-1 {
+    flex-grow: initial!important;
+  }
+  .navbar ul.nav {
+    flex-grow: 1!important;
+  }
+  .navbar ul.nav .active {
+    color: #e30f19!important;
+    font-weight: bold;
+  }
+  .navbar img {
+    height: 34px;
+  }
+}
+
+@media (min-width: 1200px) {
+
 }

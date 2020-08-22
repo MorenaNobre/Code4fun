@@ -58,3 +58,23 @@ body, .bg-dark{
 .media-avatar img {
   height: 38px;
 }
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+/*aguardar resposta udemy para corrigir isto*/
+.full-banner {
+  background-image: url('../img/full-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 50vh;
+  width: 100vw;
+}

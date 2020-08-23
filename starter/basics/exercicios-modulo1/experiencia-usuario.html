@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Experiência Usuário</title>
+</head>
+<body>
+
+  <script>
+  
+    const calcExp = age => {
+      switch(true) {
+        case age >= 0 && age <=1:
+          console.log(`Você tem ${age} anos de experiência, seu nível é: Iniciante`)
+          break
+        case age >= 1 && age <= 3:
+          console.log(`Você tem ${age} anos de experiência, seu nível é: Intermediário`)
+          break
+        case age >= 3 && age <=6:
+          console.log(`Você tem ${age} anos de experiência, seu nível é: Avançado`)
+          break
+        default:
+          console.log(`Você tem ${age} anos de experiência, seu nível é: Sith Master`)
+      }
+    }
+
+    calcExp(1)
+    calcExp(3)
+    calcExp(6)
+    calcExp(10)
+
+  </script>
+  
+</body>
+</html>

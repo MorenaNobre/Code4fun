@@ -1,0 +1,11 @@
+$body-bg: #f1f1f1;
+$body-color: #333;
+$enable-rounded: false;
+$enable-pointer-cursor-for-buttons: false;
+
+$theme-colors: (
+  "primary": #EE5A24,
+  "secondary": #C4E538
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

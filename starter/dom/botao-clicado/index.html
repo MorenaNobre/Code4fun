@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Botão clicado</title>
+</head>
+<body>
+
+  <div id="app">
+    <button onclick="mostraAlerta()">Me pressione</button>
+  </div>
+  <div id="mouse">
+    <button onmouseover="passouMouse()">Passe o mouse</button>
+  </div>
+  <div id="digitando">
+    <input onkeypress="digitou()">
+  </div>
+
+  <script>
+  
+    function mostraAlerta() {
+      alert('Botão foi clicado')
+    }
+
+    function passouMouse() {
+      alert('Passou o mouse')
+    }
+
+    function digitou() {
+      alert('Digitou')
+    }
+
+  </script>
+  
+</body>
+</html>

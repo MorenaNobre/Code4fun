@@ -9,14 +9,77 @@
 
 body, button, input, ul, a {
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(233, 243, 216);
+  color: #2f2e41;
 }
 
 #app {
-  background-color: orangered;
+  background-color: #bebcf3;
+  max-width: 50%;
+  max-height: 70%;
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: center;
   padding: 42px;
-  margin: 36px;
+  margin: 80px auto;
   border-radius: 12px;
 }
+
+#app img {
+  height: 200px;
+  margin-top: 24px;
+}
+
+#app h1 {
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+/* input.break {
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+} */
+
+#app input {
+  padding: 6px;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+#app input:focus {
+  outline: none;
+}
+
+#app button {
+  padding: 6px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+}
+
+#app button:focus {
+  outline: none;
+}
+
+#app ul {
+  margin: 16px auto;
+}
+
+#app ul li {
+  list-style: none;
+  margin: 8px;
+  padding: 4px;
+}
+
+#app ul li a {
+  background-color: #2f2e41;
+  text-decoration: none;
+  padding: 4px 6px;
+  margin-left: 8px;
+  font-weight: lighter;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #f2f2f2;
+}
+

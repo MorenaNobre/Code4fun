@@ -67,6 +67,8 @@ body, button, input, ul, a {
 }
 
 #app ul li {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 8px;
   padding: 4px;
@@ -76,7 +78,7 @@ body, button, input, ul, a {
   background-color: #2f2e41;
   text-decoration: none;
   padding: 4px 6px;
-  margin-left: 8px;
+  margin-left: 24px;
   font-weight: lighter;
   font-size: 14px;
   border-radius: 6px;

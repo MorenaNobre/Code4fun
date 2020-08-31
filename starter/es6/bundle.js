@@ -1,5 +1,23 @@
 "use strict";
 
+//Object Short Syntax
+var nome = 'Morena';
+var idade = 37; // const usuario = {
+//   nome: nome,
+//   idade: idade,
+//   empresa: 'CodeOn'
+// }
+
+var usuario = {
+  nome: nome,
+  idade: idade,
+  empresa: 'CodeOn'
+};
+console.log(usuario); // //Templates Literals
+// const nome = 'Morena'
+// const idade = 37
+// // console.log('Meu nome é ' + nome + ' e tenho ' + idade + ' anos.')
+// console.log(`Meu nome é ${nome} e tenho ${idade} anos.`)
 // //Operadores rest/spread
 // //REST - resto das propriedades
 // const usuario = {
@@ -26,10 +44,18 @@
 // }
 // console.log(soma1(1, 3, 4, 5, 7, 9))
 //SPREAD - repassa infos de uma para outra estrutura de dados
-var arr1 = [1, 2, 3];
-var arr2 = [4, 5, 6];
-var arr3 = [].concat(arr1, arr2);
-console.log(arr3); // //Desestruturação de objetos no JS
+// const arr1 = [1, 2, 3]
+// const arr2 = [4, 5, 6]
+// const arr3 = [...arr1, ...arr2]
+// console.log(arr3)
+// const usuario1 = {
+//   nome: 'Morena',
+//   idade: 37,
+//   empresa: 'CodeOn',
+// }
+// const usuario2 = { ...usuario1, nome: 'Raira' }
+// console.log(usuario2)
+// //Desestruturação de objetos no JS
 // const usuario = {
 //   nome: 'Morena',
 //   idade: 37,

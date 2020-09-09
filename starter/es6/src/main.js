@@ -1,4 +1,66 @@
-alert('Testando')
+import axios from 'axios'
+
+class Api {
+  static async getUserInfo(username) {
+    try{
+      const response = await axios.get(`https://api.github.com/users/${username}`)
+      console.log(response)
+    } catch (err) {
+      console.warn('Erro API')
+    }
+  }
+}
+
+Api.getUserInfo('MorenaNobre')
+Api.getUserInfo('maonskndnd')
+
+
+
+
+
+//ASYNC AWAIT
+// //Promise
+// const minhaPromise = () => new Promise((resolve, reject) => {
+//   setTimeout(() => { resolve('OK')}, 2000)
+// })
+
+// //necessário instalação: yarn add @babel/plugin-transform-async-to-generator -D
+// // yarn add @babel/polyfill -D
+
+// // async function executaPromise() {
+// //   console.log(await minhaPromise())
+// //   console.log(await minhaPromise())
+// //   console.log(await minhaPromise())
+// // }
+
+// // executaPromise()
+
+// const executaPromise = async () => {
+//   console.log(await minhaPromise())
+//   console.log(await minhaPromise())
+//   console.log(await minhaPromise())
+// }
+// executaPromise()
+
+// // minhaPromise().then(response => {
+// //   console.log(response)
+
+// //   minhaPromise().then(response => {
+// //     console.log(response)
+
+// //     minhaPromise().then(response => {
+// //       console.log(response)
+// //     })
+// //   })
+// // })
+
+
+
+
+
+
+
+// alert('Testando')
 
 
 

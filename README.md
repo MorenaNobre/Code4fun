@@ -10,7 +10,6 @@
 
 </p>
 
-## Exemplo de pull request
 
 <blockquote align="center">“The key to transformation is continuity. Keep coding!”</blockquote>
 
